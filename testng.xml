@@ -1,0 +1,15 @@
+<suite name="IMC" verbose="1" >
+<!-- <listeners>
+        <listener class-name="com.Project.SysconMaven.RetryListenerClass"/>
+</listeners> -->
+  <test name="test" >
+      <!-- <groups>	
+				<run>	
+   					 <include name="bonding" />	
+        		</run>	
+       		</groups>	 -->
+    <classes>
+       <class name="com.imc.outpatient.testsuite.TestSuite" />
+    </classes>
+  </test>
+</suite>
