@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30659" started-at="2021-04-27T19:03:39Z" finished-at="2021-04-27T19:04:09Z">
+  <suite name="Default suite" duration-ms="172181" started-at="2021-04-28T07:25:26Z" finished-at="2021-04-28T07:28:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30659" started-at="2021-04-27T19:03:39Z" finished-at="2021-04-27T19:04:09Z">
+    <test name="Default test" duration-ms="172181" started-at="2021-04-28T07:25:26Z" finished-at="2021-04-28T07:28:18Z">
       <class name="eunimart.testsuite.TestSuite">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:eunimart.testsuite.TestSuite@29774679]" name="beforeTest" is-config="true" duration-ms="14196" started-at="2021-04-28T00:33:39Z" finished-at="2021-04-28T00:33:53Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:eunimart.testsuite.TestSuite@29774679]" name="beforeTest" is-config="true" duration-ms="73537" started-at="2021-04-28T12:55:26Z" finished-at="2021-04-28T12:56:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifySignUpprocessEunimart()[pri:1, instance:eunimart.testsuite.TestSuite@29774679]" name="verifySignUpprocessEunimart" duration-ms="16242" started-at="2021-04-28T00:33:53Z" finished-at="2021-04-28T00:34:09Z">
+        <test-method status="PASS" signature="verifySignUpSignInprocessEunimart()[pri:3, instance:eunimart.testsuite.TestSuite@29774679]" name="verifySignUpSignInprocessEunimart" duration-ms="88075" started-at="2021-04-28T12:56:39Z" finished-at="2021-04-28T12:58:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySignUpprocessEunimart -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:eunimart.testsuite.TestSuite@29774679]" name="afterTest" is-config="true" duration-ms="189" started-at="2021-04-28T00:34:09Z" finished-at="2021-04-28T00:34:09Z">
+        </test-method> <!-- verifySignUpSignInprocessEunimart -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:eunimart.testsuite.TestSuite@29774679]" name="afterTest" is-config="true" duration-ms="10239" started-at="2021-04-28T12:58:08Z" finished-at="2021-04-28T12:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

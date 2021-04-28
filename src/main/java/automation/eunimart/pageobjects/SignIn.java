@@ -7,6 +7,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Eunimart.automation.commonutils.CommonUtil;
 import Eunimart.automation.commonutils.PropertiesFileReader;
+import Eunimart.automation.commonutils.ReadExcel;
 
 public class SignIn {
 
@@ -21,9 +22,9 @@ public class SignIn {
 	public static void verifySigninInputDataValidations() {
 		try {
 			logger.startTest("Verify the functionality validation of Sign-in Input Data validation");
-			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Email"), "test12@gmail.com");
+			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Email"), ReadExcel.getCellData(6, 1, "Eunimart"));
 			logger.log(LogStatus.INFO, "User Enter the Email Id");
-			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Password"), "Sai@");
+			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Password"), ReadExcel.getCellData(9, 1, "Eunimart"));
 			logger.log(LogStatus.INFO, "User Enter the Passowrd only 4 charcters");
 			CommonUtil.click(elementProperties.getProperty("Eunimart.keepsign"));
 			logger.log(LogStatus.INFO, "User Select the Keep Sign in checkbox");
@@ -54,9 +55,9 @@ public class SignIn {
 	public static void verifySigninUserEmailPassWordValidations() {
 		try {
 			logger.startTest("Verify the functionality validation of Sign-in Incorrect Username&Password validation");
-			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Email"), "test12@gmail.com");
+			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Email"), ReadExcel.getCellData(6, 1, "Eunimart"));
 			logger.log(LogStatus.INFO, "User Enter the Email Id");
-			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Password"), "Sai@12345");
+			CommonUtil.enterText(elementProperties.getProperty("Eunimart.Enter.Password"), ReadExcel.getCellData(7, 1, "Eunimart"));
 			logger.log(LogStatus.INFO, "User Enter the Invalid Passowrd");
 			CommonUtil.click(elementProperties.getProperty("Eunimart.keepsign"));
 			logger.log(LogStatus.INFO, "User Select the Keep Sign in checkbox");

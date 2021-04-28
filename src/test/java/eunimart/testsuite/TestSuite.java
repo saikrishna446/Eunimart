@@ -12,6 +12,7 @@ import Eunimart.automation.commonutils.CommonUtil;
 import Eunimart.automation.commonutils.ReadExcel;
 import automation.eunimart.pageobjects.SignIn;
 import automation.eunimart.pageobjects.SignUp;
+import automation.eunimart.pageobjects.SignUp_SignIn_Flow;
 
 public class TestSuite {
 
@@ -37,7 +38,7 @@ public class TestSuite {
 	/*
 	 * Eunimart SingUp
 	 */
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void verifySignUpprocessEunimart() {
 
 		SignUp.verifytheNavigationEunimartPage();
@@ -54,7 +55,17 @@ public class TestSuite {
 		SignIn.verifySigninInputDataValidations();
 		SignIn.verifySigninUserEmailPassWordValidations();
 	}
+	
+	/*
+	 * Eunimart SignUp&SignIn Process
+	 */
+	@Test(priority = 3, enabled = true)
+	public void verifySignUpSignInprocessEunimart(){
 
+		SignUp.verifytheNavigationEunimartPage();
+		SignUp_SignIn_Flow.verifySignUp_SignIn_Flow();
+	}
+	
 	/*
 	 * This are the mandatory fields after executing the script close the Browser
 	 */

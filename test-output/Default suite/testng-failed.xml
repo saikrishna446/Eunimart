@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="med.imc.his.automation.test.testsuite.TestSuite">
+      <class name="eunimart.testsuite.TestSuite">
         <methods>
-          <include name="loginScreenTitleVerification"/>
           <include name="beforeTest"/>
-          <include name="openBillingScreen"/>
+          <include name="verifySignUpprocessEunimart"/>
+          <include name="verifySignUpSignInprocessEunimart"/>
         </methods>
-      </class> <!-- med.imc.his.automation.test.testsuite.TestSuite -->
+      </class> <!-- eunimart.testsuite.TestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
